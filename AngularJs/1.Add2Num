@@ -1,0 +1,23 @@
+<html ng-app="myApp">
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<input type="number" ng-model="num1">
+<input type="number" ng-model="num2">
+<button ng-click="add()">Add</button>
+<p>Result: {{result}}</p>
+<script>
+var app=angular.module("myApp",[]);
+app.controller("myCtrl",function($scope) {
+$scope.num1=0;
+$scope.num2=0;
+$scope.result=0;
+
+$scope.add=function(){
+$scope.result=$scope.num1+$scope.num2
+}
+});
+</script>
+</body>
+</html>
