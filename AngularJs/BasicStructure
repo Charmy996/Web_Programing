@@ -1,0 +1,15 @@
+// Basic structure
+<html ng-app="myApp">
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+//UI here
+<script>
+var app=angular.module("my.App",[]);
+app.controller("myCtrl",function($scope) {
+// variables + functions here
+});
+</script>
+</body>
+</html>
