@@ -6,7 +6,7 @@
 <body ng-controller="myCtrl">
 //UI here
 <script>
-var app=angular.module("my.App",[]);
+var app=angular.module("myApp",[]);
 app.controller("myCtrl",function($scope) {
 // variables + functions here
 });
