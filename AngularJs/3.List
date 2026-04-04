@@ -1,0 +1,15 @@
+<html ng-app="myApp">
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+<ul>
+<li ng-repeat="user in users">{{user.name}}</li> </ul>
+</body>
+<script>
+// Note: create loop in repeat
+angular.module('myApp',[]).controller('MainCtrl',function($scope) 
+{ $scope.users=[{name:'A'},{name:'B'},{name:'C'}];
+} ); //semicolon
+</script>
+</html>
