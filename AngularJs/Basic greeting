@@ -1,0 +1,14 @@
+<html ng-app="myApp">
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+<h1>{{greeting}}</h1>
+</body>
+<script>
+let app=angular.module('myApp',[]);//Create module
+app.controller('MainCtrl',function($scope) //Add controller to module
+{$scope.greeting="Hello, AngularJS module";}
+ );
+</script>
+</html>
